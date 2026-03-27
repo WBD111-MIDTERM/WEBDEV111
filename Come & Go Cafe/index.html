@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html">Come & Go Cafe</a>
+        <nav aria-label="Primary">
+            <a class="brand" href="login.html">Login</a>
+        </nav>
+    </header>
+<h1>Order Now</h1>
+
+<div class="menu">
+    <div class="food-item">
+        <img src="americano.jpg" alt="Food Image 1" />
+        <div class="food-name">Americano</div>
+        <div class="size-options">
+            <label><input type="radio" name="size1" value="Small" checked> Small</label>
+            <label><input type="radio" name="size1" value="Medium"> Medium</label>
+            <label><input type="radio" name="size1" value="Large"> Large</label>
+        </div>
+        <button class="add-button" data-item="Food Item 1">Add</button>
+    </div>
+    <div class="food-item">
+        <img src="cafe latte.jpg" alt="Food Image 2" />
+        <div class="food-name">Cafe Latte</div>
+        <div class="size-options">
+            <label><input type="radio" name="size2" value="Small" checked> Small</label>
+            <label><input type="radio" name="size2" value="Medium"> Medium</label>
+            <label><input type="radio" name="size2" value="Large"> Large</label>
+        </div>
+        <button class="add-button" data-item="Food Item 2">Add</button>
+    </div>
+    <div class="food-item">
+        <img src="cappuccino.jpg" alt="Food Image 3" />
+        <div class="food-name">Cappuccino</div>
+        <div class="size-options">
+            <label><input type="radio" name="size3" value="Small" checked> Small</label>
+            <label><input type="radio" name="size3" value="Medium"> Medium</label>
+            <label><input type="radio" name="size3" value="Large"> Large</label>
+        </div>
+        <button class="add-button" data-item="Food Item 3">Add</button>
+    </div>
+    <div class="food-item">
+        <img src="caramel macchiato.jpg" alt="Food Image 3" />
+        <div class="food-name">Caramel Macchiato</div>
+        <div class="size-options">
+            <label><input type="radio" name="size3" value="Small" checked> Small</label>
+            <label><input type="radio" name="size3" value="Medium"> Medium</label>
+            <label><input type="radio" name="size3" value="Large"> Large</label>
+        </div>
+        <button class="add-button" data-item="Food Item 3">Add</button>
+    </div>
+    <div class="food-item">
+        <img src="espresso.jpg" alt="Food Image 3" />
+        <div class="food-name">Espresso</div>
+        <div class="size-options">
+            <label><input type="radio" name="size3" value="Small" checked> Small</label>
+            <label><input type="radio" name="size3" value="Medium"> Medium</label>
+            <label><input type="radio" name="size3" value="Large"> Large</label>
+        </div>
+        <button class="add-button" data-item="Food Item 3">Add</button>
+    </div>
+
+</div>
+
+<div class="order-section">
+    <h2>Place Your Order</h2>
+    <div id="order-list"></div>
+    <button id="placeOrder">Place Order</button>
+</div>
+
+</body>
+</html>
