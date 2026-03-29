@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Soda Music – Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      width: 360px;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .title span {
+      color: #ff2b2b;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .login-box {
+      background: transparent;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .login-box input::placeholder {
+      color: #777;
+    }
+
+    .info-text {
+      font-size: 11px;
+      color: #9a9a9a;
+      margin: 10px 0 16px;
+      line-height: 1.4;
+    }
+
+    .login-btn {
+      background: #ff2b2b;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background: #e02222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+	<a href="index.html">Home Page</a>
+    <div class="title">Soda <span>Music</span></div>
+    <div class="subtitle">
+     <h4>Login your account</h4> <br>if Music is your escape.
+    </div>
+
+    <div class="login-box">
+      <input type="text" placeholder="Email:" />
+      <input type="password" placeholder="Password:" />
+
+      <div class="info-text">
+        Musica sentiat et aurae fruatur
+      </div>
+
+      <button class="login-btn">Login</button>
+    </div>
+  </div>
+
+</body>
+</html>
