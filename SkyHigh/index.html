@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Airlines - Book Your Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <h1>Book Flights Worldwide</h1>
+        <p class="promo">Affordable Tickets Starting at $99 – Limited Time!</p>
+        <form class="search-form">
+            <div class="form-group">
+                <label>From</label>
+                <input type="text" placeholder="Manila (MNL)" value="MNL">
+            </div>
+            <div class="form-group">
+                <label>To</label>
+                <input type="text" placeholder="Los Angeles (LAX)" value="LAX">
+            </div>
+            <div class="form-group">
+                <label>Departure</label>
+                <input type="date" value="2026-04-20">
+            </div>
+            <div class="form-group">
+                <label>Return</label>
+                <input type="date" value="2026-04-30">
+            </div>
+            <div class="form-group">
+                <label>Passengers</label>
+                <select>
+                    <option>Adult</option>
+                    <option>Childern (2-7 y/o) Discount 10%</option>
+                    <option>Student - Discount 5%</option>
+                    <option>Senior</option>
+                    <option>Infant - Free</option>
+                </select>
+            </div>
+                
+                <div class="form-group">
+                <label>Travel Class</label>
+                <select>
+                    <option>Regular</option>
+                    <option>Economy</option>
+                    <option>Business</option>
+                    <option>First Class</option>
+                </select>
+            <button type="submit" class="search-btn">Search Flights</button>
+        </form>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 20px;">Hot Deals</h2>
+        
+        <div class="ticket-preview">
+            <div class="ticket-card">
+                <div class="route">MNL → LAX</div>
+                <div class="price">18,000 php</div>
+                <div class="details">Apr 20 - Apr 30 | 13h 30m | Economy</div>
+                <ul class="features">
+                    <li>Free Carry-on</li>
+                    <li>23kg Checked Baggage</li>
+                    <li>Seat Selection</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            
+            <div class="ticket-card">
+                <div class="route">MNL → JPN</div>
+                <div class="price">21,000 php</div>
+                <div class="details">Apr 25 - May 5 | 18h | First Class</div>
+                <ul class="features">
+                    <li>Meals Included</li>
+                    <li>Priority Boarding</li>
+                    <li>Free WiFi</li>
+                    <li>Flexible Changes</li>
+                </ul>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> 2026 SkyHigh Airlines. Safe travels!</p>
+    </footer>
+</body>
+</html>
