@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Events | Tickets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tickets">
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="index.html">NEXUS</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="tickets.html" class="active">Tickets</a>
+        <a href="venue.html">Venue</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-login.html">Admin</a>
+      </nav>
+      <button class="btn btn--ghost" type="button" data-party-toggle>🎉 Party Mode</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 2rem;">
+    <h1 class="section-title">Tickets & Passes</h1>
+
+    <section class="grid grid-3" style="margin-bottom: 3rem;">
+      <article class="card" style="text-align: center;">
+        <span class="badge" style="background: var(--panel-2); color: var(--text);">Starter</span>
+        <h3 style="font-size: 1.5rem; margin: 1rem 0;">Pulse Pass</h3>
+        <p style="color: var(--text-muted);">General entry, standing zone, and merch lane access.</p>
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin: 1rem 0;">$45</div>
+        <ul style="list-style: none; padding: 0; margin: 1.5rem 0; text-align: left; color: var(--text-muted);">
+          <li style="margin-bottom: 0.5rem;">✓ General admission</li>
+          <li style="margin-bottom: 0.5rem;">✓ Standing zone</li>
+          <li style="margin-bottom: 0.5rem;">✓ Merch lane access</li>
+          <li>✓ Standard entry</li>
+        </ul>
+        <a class="btn btn--ghost" href="#builder" style="width: 100%;">Select</a>
+      </article>
+
+      <article class="card" style="text-align: center; border: 2px solid var(--accent); position: relative;">
+        <span class="badge badge--hot">Most Popular</span>
+        <h3 style="font-size: 1.5rem; margin: 1rem 0;">Glow Pass</h3>
+        <p style="color: var(--text-muted);">Priority entry, lounge access, and premium experience.</p>
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin: 1rem 0;">$85</div>
+        <ul style="list-style: none; padding: 0; margin: 1.5rem 0; text-align: left; color: var(--text-muted);">
+          <li style="margin-bottom: 0.5rem;">✓ Priority entry</li>
+          <li style="margin-bottom: 0.5rem;">✓ Creator lounge</li>
+          <li style="margin-bottom: 0.5rem;">✓ 2 drink tickets</li>
+          <li style="margin-bottom: 0.5rem;">✓ Express merch lane</li>
+          <li>✓ Reserved seating area</li>
+        </ul>
+        <a class="btn btn--primary" href="#builder" style="width: 100%;">Select</a>
+      </article>
+
+      <article class="card" style="text-align: center;">
+        <span class="badge badge--limited">VIP</span>
+        <h3 style="font-size: 1.5rem; margin: 1rem 0;">Orbit Pass</h3>
+        <p style="color: var(--text-muted);">Ultimate experience with backstage and exclusive perks.</p>
+        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin: 1rem 0;">$140</div>
+        <ul style="list-style: none; padding: 0; margin: 1.5rem 0; text-align: left; color: var(--text-muted);">
+          <li style="margin-bottom: 0.5rem;">✓ VIP entrance</li>
+          <li style="margin-bottom: 0.5rem;">✓ Balcony seating</li>
+          <li style="margin-bottom: 0.5rem;">✓ Backstage tour</li>
+          <li style="margin-bottom: 0.5rem;">✓ Photo pack</li>
+          <li style="margin-bottom: 0.5rem;">✓ Unlimited drinks</li>
+          <li>✓ Meet & greet</li>
+        </ul>
+        <a class="btn btn--ghost" href="#builder" style="width: 100%;">Select</a>
+      </article>
+    </section>
+
+    <section id="builder" class="panel" style="margin-bottom: 3rem;">
+      <h2 style="margin-bottom: 1.5rem;">Quick Ticket Builder</h2>
+      
+      <div class="ticket-row" data-ticket-row data-price="45">
+        <div>
+          <strong>Pulse Pass</strong>
+          <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Entry + merch lane</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty readonly>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <div style="font-weight: 600;">$45 each</div>
+      </div>
+
+      <div class="ticket-row" data-ticket-row data-price="85">
+        <div>
+          <strong>Glow Pass</strong>
+          <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Priority + lounge</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty readonly>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <div style="font-weight: 600;">$85 each</div>
+      </div>
+
+      <div class="ticket-row" data-ticket-row data-price="140">
+        <div>
+          <strong>Orbit Pass</strong>
+          <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Balcony + backstage</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty readonly>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <div style="font-weight: 600;">$140 each</div>
+      </div>
+
+      <div class="total-box">
+        Total: <span data-total style="color: var(--accent); font-size: 1.5rem;">$0</span>
+      </div>
+
+      <button class="btn btn--primary btn--big" style="width: 100%; margin-top: 1rem;" onclick="NexusEvents.showToast('Proceeding to checkout...', 'info')">
+        Proceed to Checkout
+      </button>
+    </section>
+
+    <section>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <button type="button">What's included with each ticket tier?</button>
+          <div class="content">
+            Every ticket includes event entry and venue access. Glow adds lounge perks and drink tickets. Orbit includes backstage tours, photo packs, and meet & greets.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">Can I transfer my ticket to someone else?</button>
+          <div class="content">
+            Yes! Tickets can be transferred up to 6 hours before the event starts. Use the transfer link in your confirmation email or contact support.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">Do you offer group discounts?</button>
+          <div class="content">
+            Groups of 8+ receive 15% off. Groups of 20+ receive 25% off and reserved seating. Contact us for custom corporate packages.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">What's your refund policy?</button>
+          <div class="content">
+            Full refunds available up to 7 days before the event. 50% refund up to 48 hours before. No refunds within 48 hours, but tickets can be transferred.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="pill">Nexus Events • Secure Checkout</p>
+      <p style="color: var(--text-muted);">© 2026 Nexus Events. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Events | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="index.html">NEXUS</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="venue.html">Venue</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="admin-login.html">Admin</a>
+      </nav>
+      <button class="btn btn--ghost" type="button" data-party-toggle>🎉 Party Mode</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 2rem;">
+    <h1 class="section-title">Get In Touch</h1>
+
+    <section class="grid grid-2">
+      <div class="panel">
+        <h2 style="margin-bottom: 1rem;">Send a Message</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          Have questions about events, tickets, or venue bookings? We're here to help!
+        </p>
+        <form class="form-grid" onsubmit="event.preventDefault(); NexusEvents.showToast('Message sent! We\'ll respond within 24 hours.', 'success');">
+          <label>
+            Your Name
+            <input type="text" placeholder="John Doe" required>
+          </label>
+          <label>
+            Email Address
+            <input type="email" placeholder="john@example.com" required>
+          </label>
+          <label>
+            Topic
+            <select>
+              <option>General Inquiry</option>
+              <option>Ticket Support</option>
+              <option>Group Bookings</option>
+              <option>Press & Media</option>
+              <option>Sponsorship</option>
+              <option>Venue Rental</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea placeholder="Tell us how we can help..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="panel" style="margin-bottom: 1.5rem;">
+          <h3 style="margin-bottom: 1rem;">📍 Visit Us</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Nexus Arena Complex<br>
+            123 Innovation Drive<br>
+            Tech District, NY 10001
+          </p>
+          <a href="#" class="btn btn--ghost" style="width: 100%;">Get Directions</a>
+        </div>
+
+        <div class="panel" style="margin-bottom: 1.5rem;">
+          <h3 style="margin-bottom: 1rem;">📞 Contact</h3>
+          <p style="color: var(--text-muted); margin-bottom: 0.5rem;">
+            <strong>Phone:</strong> +1 (555) 123-4567
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 0.5rem;">
+            <strong>Email:</strong> hello@nexusevents.com
+          </p>
+          <p style="color: var(--text-muted);">
+            <strong>Support:</strong> help@nexusevents.com
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3 style="margin-bottom: 1rem;">🕐 Hours</h3>
+          <div style="display: grid; gap: 0.5rem; color: var(--text-muted);">
+            <div style="display: flex; justify-content: space-between;">
+              <span>Monday - Friday</span>
+              <span>10:00 AM - 8:00 PM</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>Saturday</span>
+              <span>12:00 PM - 10:00 PM</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>Sunday</span>
+              <span>Closed (Event days only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+      <div class="mega-banner" style="padding: 2rem;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Follow Us</h2>
+        <p style="margin-bottom: 1.5rem;">Stay updated on new events, behind-the-scenes content, and exclusive offers.</p>
+        <div class="button-row" style="justify-content: center;">
+          <a href="#" class="btn btn--ghost" style="border-color: white; color: white;">Instagram</a>
+          <a href="#" class="btn btn--ghost" style="border-color: white; color: white;">Twitter</a>
+          <a href="#" class="btn btn--ghost" style="border-color: white; color: white;">TikTok</a>
+          <a href="#" class="btn btn--ghost" style="border-color: white; color: white;">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="pill">Nexus Events • We Reply Fast</p>
+      <p style="color: var(--text-muted);">© 2026 Nexus Events. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

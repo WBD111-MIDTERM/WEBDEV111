@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Events | Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="index.html">NEXUS</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="venue.html">Venue</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-login.html" class="active">Admin</a>
+      </nav>
+      <button class="btn btn--ghost" type="button" data-party-toggle>🎉 Party Mode</button>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 2rem; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+    <div class="panel" style="max-width: 450px; width: 100%; text-align: center;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">🔐</div>
+      <h1 style="margin-bottom: 0.5rem;">Admin Access</h1>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">
+        Authorized personnel only. Manage events, tickets, and venue operations.
+      </p>
+
+      <form class="form-grid" data-admin-form onsubmit="NexusEvents.adminLogin(event)">
+        <label style="text-align: left;">
+          ID
+          <input type="text" placeholder="Enter Your ID" data-admin-user required>
+        </label>
+        <label style="text-align: left;">
+          Password
+          <input type="password" placeholder="Enter Your Password" data-admin-pass required>
+        </label>
+        <p class="status" data-admin-status style="margin: 0; font-size: 0.9rem;"></p>
+        <button type="submit" class="btn btn--primary btn--big">Sign In</button>
+      </form>
+
+      <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+        Demo credentials: <strong>admin</strong> / <strong>nexus2026</strong>
+      </p>
+
+      <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+        <a href="index.html" class="btn btn--ghost" style="width: 100%;">← Back to Site</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="pill">Nexus Events • Secure Area</p>
+      <p style="color: var(--text-muted);">© 2026 Nexus Events. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
