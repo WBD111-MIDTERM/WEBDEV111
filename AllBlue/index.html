@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blue — Voyage Beyond the Clouds</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">All Blue</span>
+            <span class="badge">Voyage</span>
+        </div>
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="#deals">Deals</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#crew">Crew</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+     <section class="hero">
+        <div class="hero-copy">
+            <span class="eyebrow">Premium Sky Cruises</span>
+            <h1>Set Sail Beyond the Clouds</h1>
+            <p class="promo">Discover crew-guided voyages, luxurious cabins, and unforgettable aerial experiences.</p>
+            <div class="hero-actions">
+                <a href="#deals" class="cta-btn">Explore Voyages</a>
+                <a href="#contact" class="secondary-btn">Talk to Crew</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="ship-card">
+                <p class="ship-label">Next Departure</p>
+                <h2>NYC → LON</h2>
+                <p>Starliner Elite • 12h 40m</p>
+                <span class="ship-price">$1,399</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-panel" id="contact">
+        <div class="panel-copy">
+            <h2>Reserve Your Cruise Ship Voyage</h2>
+            <p>Choose your route, cabin type, and crew experience for an effortless journey.</p>
+        </div>
+         <form class="search-form">
+             <div class="form-group">
+                <label for="origin">Origin</label>
+                <input id="origin" type="text" placeholder="New York (JFK)">
+             </div>
+             <div class="form-group">
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder="London (LHR)">
+             </div>
+             <div class="form-group">
+                <label for="departure">Departure</label>
+                <input id="departure" type="date" value="2026-05-10">
+             </div>
+             <div class="form-group">
+                <label for="return">Return</label>
+                <input id="return" type="date" value="2026-05-20">
+             </div>
+             <div class="form-group">
+                <label for="passengers">Passengers</label>
+                <select id="passengers">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>Family Cabin</option>
+                    <option>Solo Traveler</option>
+                 </select>
+             </div>
+            <div class="form-group">
+                <label for="cabin">Cabin</label>
+                <select id="cabin">
+                    <option>Sky Suite</option>
+                    <option>Premium Cabin</option>
+                    <option>Ocean Window</option>
+                    <option>Observation Deck</option>
+                 </select>
+            </div>
+            <button type="submit" class="search-btn">Reserve Voyage</button>
+         </form>
+     </section>
+ 
+    <section id="deals" class="offers container">
+        <div class="section-header">
+            <h2>Featured Cruise Ship Departures</h2>
+            <p>Fast-book journeys crafted for comfort, style, and crew-led adventure.</p>
+        </div>
+         <div class="ticket-preview">
+             <div class="ticket-card">
+                <div class="route">NYC → LON</div>
+                <div class="price">$1,399</div>
+                <div class="details">May 10 - May 20 | 12h 40m | Sky Suite</div>
+                 <ul class="features">
+                    <li>Live Crew Concierge</li>
+                    <li>Panoramic Cabin Views</li>
+                    <li>Gourmet Dining</li>
+                    <li>In-flight Spa Access</li>
+                 </ul>
+                <a href="#contact" class="book-now">Book Now</a>
+             </div>
+             <div class="ticket-card">
+                <div class="route">LAX → TYO</div>
+                <div class="price">$1,649</div>
+                <div class="details">Jun 2 - Jun 14 | 15h 20m | Premium Cabin</div>
+                 <ul class="features">
+                     <li>Priority Boarding</li>
+                    <li>Suite Lounge</li>
+                    <li>Entertainment Deck</li>
+                    <li>Flexible Itinerary</li>
+                </ul>
+                <a href="#contact" class="book-now">Book Now</a>
+            </div>
+            <div class="ticket-card">
+                <div class="route">SYD → DXB</div>
+                <div class="price">$1,799</div>
+                <div class="details">Jul 5 - Jul 15 | 13h 55m | Observation Deck</div>
+                <ul class="features">
+                    <li>Crew-led Stargaze</li>
+                    <li>Premium Meals</li>
+                    <li>Exclusive Lounges</li>
+                    <li>Unlimited WiFi</li>
+                 </ul>
+                <a href="#contact" class="book-now">Book Now</a>
+             </div>
+         </div>
+    </section>
+
+     <footer>
+        <p>© 2026 All Blue. Explore the Sea.</p>
+     </footer>
+ </body>
+ </html>
